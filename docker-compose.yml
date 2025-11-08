@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: nutech_app
+    restart: unless-stopped
+    ports:
+      - "18011:18011"
+    depends_on:
+      - db
+    environment:
+      - SERVER_PORT=${SERVER_PORT}
+      - DB_URL=${DB_URL}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - JWT_SECRET=${JWT_SECRET}
+    volumes:
+      - nutech_uploads:/app/uploads
+
+  db:
+    image: postgres:16
+    container_name: nutech_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - nutech_pgdata:/var/lib/postgresql/data
+
+volumes:
+  nutech_pgdata:
+  nutech_uploads:
