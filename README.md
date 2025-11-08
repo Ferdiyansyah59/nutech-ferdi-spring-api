@@ -9,10 +9,9 @@ Semua *script* migrasi *database* yang dikelola oleh Flyway disimpan di lokasi s
   https://ferdi-nutech.anitech.id
 ```
 Route List:
-```
-  /registration
-  /login
-```
+
+- /registration
+- /login
 
 ### Detail
 * **`src/main/resources`**: Ini adalah direktori standar di Spring Boot/Maven/Gradle untuk menyimpan *resources* (sumber daya) aplikasi, termasuk konfigurasi, *template*, dan *script* *database*.
