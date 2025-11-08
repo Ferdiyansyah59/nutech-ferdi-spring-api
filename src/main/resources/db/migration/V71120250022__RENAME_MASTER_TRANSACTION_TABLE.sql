@@ -1,0 +1,1 @@
+ALTER TABLE master_transaction_type RENAME TO master_transaction_types;
