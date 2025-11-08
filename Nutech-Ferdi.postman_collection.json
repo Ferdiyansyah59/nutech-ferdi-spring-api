@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "f9b8040e-a824-4e74-be26-310494d71fa2",
+		"name": "Nutech-Ferdi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9586598",
+		"_collection_link": "https://medit-imk-uyee.postman.co/workspace/New-Team-Workspace~e68f9279-9140-4375-bf1a-f0af1b206e92/collection/9586598-f9b8040e-a824-4e74-be26-310494d71fa2?action=share&source=collection_link&creator=9586598"
+	},
+	"item": [
+		{
+			"name": "Registrasion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ferdi@mail.com\",\n    \"first_name\": \"Ferdiyansyah\",\n    \"last_name\": \"Ferdi\",\n    \"password\": \"Nadh1801_\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/registration",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ferdi@mail.com\",\n    \"password\": \"Nadh1801_\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/login",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/profile",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Ferdiyansyah FerNadh\",\n    \"last_name\": \"Nadh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/profile/update",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"profile",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/ferdi/Downloads/images (1).jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/profile/image",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"profile",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/banner",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"banner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Services",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/services",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/balance",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"top_up_balance\": 1000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/topup",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"service_code\": \"VOUCHER_GAME\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/transaction",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction History",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJkaUBtYWlsLmNvbSIsImlhdCI6MTc2MjU5MTQ1NCwiZXhwIjoxNzYyNTk0NDU0fQ.hdvWUwnSdw9PfXBlcTn8e8_6e93hkHJQuc6mG4n45hMa7uKfcSeIOB5E2aF3vbaC2Uh7ls9chCq8mef_yfpeDg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ferdi-nutech.anitech.id/transaction/history?offset=0&limit=10",
+					"protocol": "https",
+					"host": [
+						"ferdi-nutech",
+						"anitech",
+						"id"
+					],
+					"path": [
+						"transaction",
+						"history"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
