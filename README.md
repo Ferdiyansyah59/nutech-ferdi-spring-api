@@ -18,7 +18,7 @@ Route List:
 /banner
 /services
 /balance
-/topip
+/topup
 /transaction
 /transaction/history
 ```
